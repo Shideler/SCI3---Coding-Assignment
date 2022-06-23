@@ -5,7 +5,7 @@ date: '2022-06-23'
 output: html_document
 ---
 
-Part (A): How do you avoid mathing errors?
+#Part (A): How do you avoid mathing errors?
 
 Since the data produced by NGS and PCR will be matched on the Sample ID, 
 it is imperative at all levels of the process to make sure that Sample IDs
@@ -28,7 +28,7 @@ script that would combine the ngs_weekly data into a single dataframe, performe 
 generate a report CSV to verify that each sample is complete and has a matching result in the NGS and PCR tables. Once a review by a person 
 has been completed, the sql upload of the NGS and PCR datasets could be uploaded and appended to their respectiv SQL database tables. 
 
-Part (B): How do you provide feedback to the user regarding successful and unsuccessful matches?
+#Part (B): How do you provide feedback to the user regarding successful and unsuccessful matches?
 
 In my answer and script of Question 5, I am batching the NGS results and PCR results on a monthly basis and performing a check before 
 uploading to the sql server. This would help to ensure data integrity in the sql database. A report from the rscript, in the form of 
