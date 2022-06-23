@@ -7,18 +7,26 @@ output: html_document
 
 #Question 3 Answers:
 
-Part (A):
+# Part (A): Generate standard variant files from the gold standards BAM Files from the lab. 
 
-Generate standard variant files from the gold standards BAM Files from the lab. 
-
-Using free bcftools from the bioconda respository I would use the following commands:
+In the past, for prokaryotic variant file generation, I have used the free bcftools from the bioconda 
+respository I would use the following commands:
 
 bcftools mpileup -Ob -o <gold_standard.bcf> -f <hg38_ref.fa> <gold_standard.bam> 
 bcftools call -vmO z -o <gold_standard.vcf.gz> <gold_standard.bcf>
 
 These commands could / would be added to a bash script or pipeline using snakemake or nextflow for further automation and batch runs. 
 
-Part (B):
+However for human genome variant calling I would use the following packages: 
+
+1. Picard tool to remove duplicates (not if high coverage WGS)
+2. Bedtools genomecov to determine read coverage (on-target ratio of mapped reads & on-target coverage if Panel Seq or WES)
+3. Variant calling packages, Mutect is widely used but is restricted to somatic cell sequences. Strelka or Platypus might be 
+better options since they can variant call with somatic or germline cell sequences. It is also important for QC that confidence
+scores should be reported. (IF samples are FFPE, due to DNA-crosslinking / potential cytosine deamination further filtering steps
+may be needed).
+
+# Part (B):
 
 How do you propose to valide these variants?
 
