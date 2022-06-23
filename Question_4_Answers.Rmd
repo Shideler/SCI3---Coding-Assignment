@@ -15,14 +15,17 @@ from the desktop computers attached to the RT-PCR machines.
 
 # Part (B): What do you suggest to minimize problems from the data being exported by the machine?
 
-From my own experience in daily transfers of high throughput whole genome sequencing data, to miminize data export problems we take a few simple steps: 
+From my own experience in daily transfers of high throughput whole genome sequencing data, to miminize data 
+export problems we take a few simple steps: 
 
 1). Use a wired network connection - stable, quick and secure (compared to using WIFI)
 
 2). Use naming conventions to properly identy the data being transferred. 
-Example: For todays run, the data would be named "220623_S_N_150" This designates the date, location, sequencing method and the ID of the run to associate the run with our paperwork. 
+Example: For todays run, the data would be named "220623_S_N_150" This designates the date, location, sequencing 
+method and the ID of the run to associate the run with our paperwork. 
 
-3). Keep a log of transfers - We have a very fluid environment so keeping a log of transferred data, ensures that data isn't forgotten and slips through the cracks. 
+3). Keep a log of transfers - We have a very fluid environment so keeping a log of transferred data, ensures that 
+data isn't forgotten and slips through the cracks. 
 
 4). Routine maintenance on the desktop machine collecting data, such as monthly defragmentation, also insures
 the data integrity. 
