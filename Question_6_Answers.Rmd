@@ -1,0 +1,33 @@
+---
+title: 'Q6: Answers'
+author: "Steven Shideler"
+date: '2022-06-23'
+output: html_document
+---
+
+Part (A): How do you avoid mathing errors?
+
+Since the data produced by NGS and PCR will be matched on the Sample ID, 
+it is imperative at all levels of the process to make sure that Sample IDs
+are recorded properly. 
+
+Within the script from question 5, additional exception handling can be added such as:
+
+1. Check for duplications using the  base::duplicated() function. Potentially remove them with x[!duplicated(x)]
+
+2. Check of missing samples: Using the base::unique() function, you can extract and then compare the Sample ID columns
+to ensure that they match before uploading to the sql database.
+
+3. Check for missing data in the tables themselves using the base::is.na(x) function. 
+
+4. Check on the data tables themselves to make sure they each have the approriate number of columns and rows, using ncols() and nrows(). 
+
+
+With the addition of error checking, it might be better to separate the commands from the sql update. Instead run the merging portion of the script that would combine the ngs_weekly data into a single dataframe, performe data integrity checks on the pcr and ngs dataframes and generate a report CSV to verify that each sample is complete and has a matching result in the NGS and PCR tables. Once a review by a person has been completed, the sql upload of the NGS and PCR datasets could be uploaded and appended to their respectiv SQL database tables. 
+
+Part (B): How do you provide feedback to the user regarding successful and unsuccessful matches?
+
+In my answer and script of Question 5, I am batching the NGS results and PCR results on a monthly basis and performing a check before uploading to the sql server. This would help to ensure data integrity in the sql database. A report from the rscript, in the form of a .csv file, could be output for review, and corrected, before any sql database upload is performed.
+
+However, if the NGS data is to be uploaded and reviewed on a weekly bases to the sql server, I would create a report from the sql server, with an sql query, at the end of the month once PCR data has been uploaded to make sure that each sample ID has both an NGS and PCR entry and if not, to allow the user to provide follow up on why this is. 
+
