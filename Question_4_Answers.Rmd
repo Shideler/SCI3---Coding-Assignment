@@ -5,13 +5,13 @@ date: '2022-06-23'
 output: html_document
 ---
 
-Part (A): What do you suggestt would be the best way to transfer the data from one point to another?
+# Part (A): What do you suggestt would be the best way to transfer the data from one point to another?
 
 Keeping in mind that confidentiality is paramount when dealing with patient data, and working with the 
 restraints of Alberta Health Serives IT structure, I believe the best way to transfer the data is through
 the use of an intermediate network drive. In Molecular Diagnostics, we use the APL_Genomics or Helix drives to securely transfer confidential patient information between our Illumina sequences and the date generated from the desktop computers attached to the RT-PCR machines. 
 
-Part (B): What do you suggest to minimize problems from the data being exported by the machine?
+# Part (B): What do you suggest to minimize problems from the data being exported by the machine?
 
 From my own experience in daily transfers of high throughput whole genome sequencing data, to miminize data export problems we take a few simple steps: 
 
@@ -25,7 +25,7 @@ Example: For todays run, the data would be named "220623_S_N_150" This designate
 4). Routine maintenance on the desktop machine collecting data, such as monthly defragmentation, also insures
 the data integrity. 
 
-Part (C): You can create a commit in the respositry with answers in text file(s). 
+# Part (C): You can create a commit in the respositry with answers in text file(s). 
 
 Is this Rmarkdown file ok? 
 
