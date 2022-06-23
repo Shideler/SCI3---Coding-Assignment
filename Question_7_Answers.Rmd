@@ -1,0 +1,39 @@
+---
+title: 'Q7: Answers'
+author: "Steven Shideler"
+date: '2022-06-23'
+output: html_document
+---
+
+# Part (A): How do you deliver your reports?
+
+I would perfer to utilize Rmarkdown to produce the reports. I believe the flexibility of this 
+platform to output reports in html, word doc, and pdf formats is desireable. 
+
+In addition, the ability to imbed sql query commands within the Rmarkdown document would create efficienies in 
+allowing forautomation of the report generation. A template report can be easily and consistently produced in this manner.
+
+The resports wouldbe saved in the same lab intranet location as the data results to keep them together. The flexible 
+formats previously mentioned, would allow for easy viewing on all our laboratory computers. 
+
+# Part (B): How do you know if the analysis passed QA/QC and can then be moved to storage?
+
+In my current role of processing and analyzing covid NGS data, our pipeline produces several qc_reports at the various stages of basecalling, demultiplexing, dehosting, and then lineage assignments for each of the 96 samples that we run in parrallel. 
+
+To pass the runs, we assess the read depth of our extraction and no template controls (NTCs) to make sure that 
+there isn't any contamination in our data. In addition, log files are generated that show that each step in the pipeline 
+was executed without error. In the situation outline here, controls have not been included due to the processes reliability. 
+
+However, I would highly suggest that a positive and negative control be added to aid in making sure that the process is producing valid data. 
+I would also discuss with the Genetisist on call regarding specific metrics and criteria on which to pass or fail both the NGS and PCR runs. These metrics could be based on such measures as read depth, on-target ratios of mapped reads, varian calling confidence scores,
+sequencing Q score thresholds of say 30+ for Illumina platform sequences or 9+ for nanopore long read resequence data. 
+
+# Part (C): What would be your preferred method to transfer data? Would it be manual or automated transfer?
+
+I would think that a secure ssh connection, say using putty, would be a good way to transfer the data to long term storage
+in another network hub. Before working in a health care environment, I would be very quick to say automated transfer would be sufficient. However, due to the sensitivity and the importance of maintaining data integrity of patient results, I believe that having some manual
+checks in place would be prudent, if not necessary depending on laboratory accredidation requirements. Regardless of whether a manual or automated transfer is performed, some validation such as the use of checksums should be used to make sure that the complete data has been successfuly transferrred to longterm storage before the local data is removed. 
+
+
+
+
