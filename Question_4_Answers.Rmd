@@ -9,7 +9,9 @@ output: html_document
 
 Keeping in mind that confidentiality is paramount when dealing with patient data, and working with the 
 restraints of Alberta Health Serives IT structure, I believe the best way to transfer the data is through
-the use of an intermediate network drive. In Molecular Diagnostics, we use the APL_Genomics or Helix drives to securely transfer confidential patient information between our Illumina sequences and the date generated from the desktop computers attached to the RT-PCR machines. 
+the use of an intermediate network drive. In Molecular Diagnostics, we use the APL_Genomics or Helix drives 
+to securely transfer confidential patient information between our Illumina sequences and the date generated 
+from the desktop computers attached to the RT-PCR machines. 
 
 # Part (B): What do you suggest to minimize problems from the data being exported by the machine?
 
