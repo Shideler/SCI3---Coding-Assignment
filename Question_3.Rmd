@@ -26,6 +26,11 @@ I would use the vcf-validator which is a validation suite for VCF files.
 
 https://github.com/EBIvariation/vcf-validator.git
 
-"This suite includes all the checks from the vcftools suite as well as additional lexical, syntactic and semantic analysis of the VCF input."
+"This suite includes all the checks from the vcftools suite as well as 
+additional lexical, syntactic and semantic analysis of the VCF input."
 
-This pipeline not only validates and checks for sytnax errors that might have been created during the generation of the vcf files, it has the added functionality of finding and fixing simple errors such as the presence of duplicates and with the help of a reference file, can also check the correctness of the sequences within a vcf file. 
+This pipeline not only validates and checks for sytnax errors that might 
+have been created during the generation of the vcf files, it has the added 
+functionality of finding and fixing simple errors such as the presence of 
+duplicates and with the help of a reference file, can also check the correctness 
+of the sequences within a vcf file. 
