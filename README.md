@@ -1,6 +1,8 @@
 # SCI3---Coding-Assignment
-For Paulo
+Author: Steven Shideler
+contact: steven.shideler@albertaprecisionlabs.ca
 
+For Paulo
 
 # Installation
 
