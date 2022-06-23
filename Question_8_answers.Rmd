@@ -1,0 +1,29 @@
+---
+title: 'Q8: Answers'
+author: "Steven Shideler"
+date: '2022-06-23'
+output: html_document
+---
+
+# Part (A): Do you need to re-validate your software?
+
+I would think so. Currently in my capacity as a laboratory specialist, we do infact validate
+all equipment before use. If the PCR machine has broken, then a validation run will need to be
+run on the new PCR machine. The old PCR machine will also need to be re-validated after repairs
+are made to the unit. 
+
+# Part (B): If so, what would be the best approach?
+
+In my experience, re-running a previous NGS run on the new equipment is peformed. The data is then
+compared with the previously analyzed data to see if the results match. On equipment of the same model
+and make, we usually only peform one run. However, if it is a completely new piece of equipment, model, 
+manufacturer, etc., validation should be performed in triplicate on three different runs consisting of various
+sample types for validation. 
+
+# Part (C): Would you need to transfer your software to the new desktop machine, or not?
+
+Yes. However, using an online repository such as GitHub can greatly spead up the process by cloning the 
+repository. If R or python scripts are being used, R and/or python installations may also be required.
+From my experience, permission / admin access to AHS monitored computers has always been a bit of a struggle.
+We have recently gotten approval to migrate two of our NGS computers to linux boxes and unmanaged by AHS to 
+make these kinds of processes smoother. 
